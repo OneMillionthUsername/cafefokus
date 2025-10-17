@@ -1,0 +1,237 @@
+body, html {
+    /* height: 100%; */
+    /* margin: 0; */
+}
+
+#scrollToTopBtn {
+    position: sticky;
+    margin-bottom: 30px;
+    bottom: 20px;
+    right: 20px;
+    float: right;
+    display: none;
+    z-index: 1001;
+    cursor: pointer;
+  }
+
+.nav-link{
+    color: black;
+}
+  
+.parallax-section {
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+
+.parallax-bg {
+    background-image: url('images/cofe_machine.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.7);
+}
+
+.row{
+    max-width: 100%;
+}
+
+footer{
+    clear: right;
+}
+
+.parallax-bg-two {
+    background-image: url('images/cofe_cake.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.7);
+}
+
+.parallax-bg-three {
+    background-image: url('images/side_cofe.jpg');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    filter: brightness(0.7);
+}
+
+.parallax-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+}
+
+.parallax-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.0); /* Hintergrundüberlagerung hinzufügen, um den Text besser sichtbar zu machen */
+    z-index: 1;
+}
+
+h1{
+    font-style: oblique;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+h2{
+    text-align: center;
+}
+
+.banner-container{
+    padding-bottom: 20px;
+}
+
+.nav{
+    background-color: violet;
+    border-bottom: solid 2px black;
+}
+
+.container{
+    max-width: 100%;
+    display: block;
+    padding: 0px;
+}
+
+footer.container{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.block-text{
+    padding: 0px 100px;
+}
+
+.small-star{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 25%;
+}
+
+.events-container{
+    padding: 5px;
+}
+
+.upcoming-events-container{
+    padding-top: 20px;
+}
+
+.footer-container{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.brunch-container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: transparent;
+}
+
+.carousel-container{
+    max-width: 100%;
+    height: auto;
+    padding: 50px 100px;
+}
+
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    max-width: 25%;
+    transition: all 0.5s ease;
+}
+
+div.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.text-centered{
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+}
+
+.centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img.small{
+    width: 50%;
+}
+
+.img-footer{
+    height: 40%;
+}
+
+.vergroessern{
+    max-width: 60%;
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-container{
+    padding: 0px 200px;
+}
+.verdrehen{
+    transition: transform 0.3s ease-in-out;
+}
+
+.vergroessern:hover{
+    transform: scale(1.2);
+}
+
+.verdrehen:hover{
+    transform: rotate(-15deg);
+}
+
+footer{
+    background-color: rgb(144, 199, 181);
+    border-top: 2px solid black;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.carousel-inner > .carousel-item > img {
+    object-fit: contain;
+    max-width: 100%;
+    height: 600px !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
