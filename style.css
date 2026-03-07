@@ -400,14 +400,70 @@ footer {
 
 /* === IMPRESSUM === */
 .impressum-container {
-    max-width: 860px;
+    max-width: 720px;
     margin: 0 auto;
-    padding: 3rem 1.5rem 4rem;
+    padding: 4rem 1.5rem 5rem;
 }
 
-.impressum-container ul {
-    padding-left: 1.5rem;
-    line-height: 1.9;
+.imp-section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid rgba(242,235,217,0.12);
+}
+
+.imp-section:last-of-type {
+    border-bottom: none;
+}
+
+.imp-section h2 {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--mint);
+    margin-bottom: 0.75rem;
+    text-align: left;
+}
+
+.imp-section address,
+.imp-section p {
+    font-size: 0.95rem;
+    line-height: 1.85;
+    color: rgba(242,235,217,0.75);
+}
+
+.imp-section address { font-style: normal; }
+
+.imp-section strong {
+    color: var(--cream);
+    font-weight: 700;
+}
+
+.imp-section a {
+    color: var(--mint);
+}
+
+.imp-placeholder {
+    background: rgba(238,130,238,0.2);
+    color: var(--violet);
+    padding: 0 4px;
+    border-radius: 2px;
+    font-style: normal;
+}
+
+.imp-back {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+.imp-back a {
+    color: var(--cream);
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+.imp-back a:hover {
+    opacity: 1;
 }
 
 /* === RESPONSIVE === */
