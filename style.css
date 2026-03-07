@@ -408,7 +408,7 @@ footer {
 .imp-section {
     margin-bottom: 2.5rem;
     padding-bottom: 2.5rem;
-    border-bottom: 1px solid rgba(242,235,217,0.12);
+    border-bottom: 1px solid rgba(15,15,15,0.1);
 }
 
 .imp-section:last-of-type {
@@ -420,7 +420,7 @@ footer {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.14em;
-    color: var(--mint);
+    color: var(--black);
     margin-bottom: 0.75rem;
     text-align: left;
 }
@@ -429,23 +429,22 @@ footer {
 .imp-section p {
     font-size: 0.95rem;
     line-height: 1.85;
-    color: rgba(242,235,217,0.75);
+    color: var(--black);
 }
 
 .imp-section address { font-style: normal; }
 
 .imp-section strong {
-    color: var(--cream);
     font-weight: 700;
 }
 
 .imp-section a {
-    color: var(--mint);
+    color: var(--black);
 }
 
 .imp-placeholder {
-    background: rgba(238,130,238,0.2);
-    color: var(--violet);
+    background: rgba(238,130,238,0.25);
+    color: var(--black);
     padding: 0 4px;
     border-radius: 2px;
     font-style: normal;
@@ -457,8 +456,8 @@ footer {
 }
 
 .imp-back a {
-    color: var(--cream);
-    opacity: 0.6;
+    color: var(--black);
+    opacity: 0.5;
     text-decoration: none;
 }
 
