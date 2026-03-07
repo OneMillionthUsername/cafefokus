@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script defer src="script.js"></script>
@@ -12,7 +11,8 @@
     <title>Café Fokus</title>
 </head>
 <body>
-    <!--NAVBAR-->
+
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md sticky-top nav" aria-label="Hauptnavigation">
         <div class="container-fluid justify-content-center">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Navigation öffnen">
@@ -20,201 +20,166 @@
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarMain">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="main.html" class="nav-link" aria-current="page">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#events" class="nav-link">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#info" class="nav-link">Info</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Shop</a>
-                    </li>
+                    <li class="nav-item"><a href="main.html" class="nav-link" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="#events" class="nav-link">Events</a></li>
+                    <li class="nav-item"><a href="#info" class="nav-link">Info</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Shop</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!--HEADER-->
-    <header>
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero">
         <h1 class="visually-hidden">Café Fokus</h1>
-        <div>
-            <img id="logo" src="assets/Fokus logo.png" alt="Café Fokus Logo">
+        <div class="hero-center">
+            <img src="assets/FOKUS BLOC.png" alt="Café Fokus – Coffee Brew Bites" class="hero-bloc">
         </div>
-        <div>
-            <div class="banner-container">
-                <img class="vergroessern" src="assets/Coffee brew butes.png" alt="Coffee, Brew, Bites">
-            </div>
+        <div class="hero-bottom">
+            <address>Kleine Pfarrgasse 28 · 1020 Wien</address>
+            <span class="hero-scroll" aria-hidden="true">↓</span>
         </div>
-    </header>
+    </section>
+
+    <!-- HOURS -->
+    <section id="info" class="hours-strip" aria-label="Öffnungszeiten">
+        <div class="hours-item">
+            <span class="hours-day">Di – Fr</span>
+            <span class="hours-time">7:30 – 16:00</span>
+        </div>
+        <div class="hours-item">
+            <span class="hours-day">Sa – So</span>
+            <span class="hours-time">9:00 – 16:00</span>
+        </div>
+        <div class="hours-item hours-closed">
+            <span class="hours-day">Mo</span>
+            <span class="hours-time">Ruhetag</span>
+        </div>
+    </section>
 
     <main>
-        <!--INFO / ÖFFNUNGSZEITEN-->
-        <section id="info" aria-label="Adresse und Öffnungszeiten" class="parallax-section">
-            <div class="parallax-bg">
-                <div class="parallax-content">
-                    <div class="container">
-                        <address>
-                            Café Fokus<br>
-                            Kleine Pfarrgasse 28<br>
-                            1020 Vienna
-                        </address>
-                        <h2 class="section-title">Öffnungszeiten</h2>
-                        <p style="font-style: italic; text-align: center;">
-                            Di–Fr 7:30–16:00 Uhr<br>
-                            Sa–So 9:00–16:00 Uhr<br>
-                            Mo Ruhetag
-                        </p>
+
+        <!-- BRUNCH: SPLIT -->
+        <section id="brunch" class="split" aria-label="Weekend Brunch">
+            <div class="split-photo" style="background-image: url('images/milk_cofe.jpg');"></div>
+            <div class="split-content">
+                <span class="section-num" aria-hidden="true">01</span>
+                <h2 class="section-title">Weekend<br>Brunch</h2>
+                <p>Jeden Samstag und Sonntag lädt das Café Fokus zum entspannten Wochenendbrunch ein. Frisch gebackene Croissants, hausgemachter Karottenkuchen, saftige Fruchtpies – alles liebevoll zubereitet, begleitet von Nomad-Specialty-Coffee.</p>
+                <p>Vegane Optionen immer dabei. Hunde willkommen.</p>
+                <div class="croissant-row" aria-hidden="true">
+                    <img src="assets/croissant.png" alt="" class="croissant spin-a">
+                    <img src="assets/croissant.png" alt="" class="croissant spin-b">
+                    <img src="assets/croissant.png" alt="" class="croissant spin-c">
+                </div>
+            </div>
+        </section>
+
+        <!-- PHOTO STRIP -->
+        <div class="photo-strip" aria-hidden="true">
+            <img src="images/medium-shot-woman-holding-coffee-mug.jpg" alt="">
+            <img src="images/dark_cofe_top.jpg" alt="">
+            <img src="images/neagtive-space-woman-stirring-coffee-Custom-1.jpg" alt="">
+        </div>
+
+        <!-- EVENTS -->
+        <section id="events" class="section-events" aria-label="Events und Veranstaltungen">
+            <div class="events-inner">
+                <div class="events-head">
+                    <span class="section-num" aria-hidden="true">02</span>
+                    <h2 class="section-title">Save the Date</h2>
+                </div>
+                <div class="events-body">
+                    <div class="events-text">
+                        <p>Das Café Fokus ist mehr als ein Kaffeehaus – es ist ein Ort der Begegnung. Lesungen, Konzerte, Ausstellungen, Community-Events. Unser zweistöckiges Lokal ist der kulturelle Treffpunkt im Herzen Leopoldstadts.</p>
+                        <p>→ <a href="https://www.instagram.com/le.cafe.fokus/" target="_blank" rel="noopener">@le.cafe.fokus</a></p>
+                        <h3>Gemeinschaft & Kultur</h3>
+                        <p>Buch-Club, Vinyl-Abende, Kunstinstallationen – wir freuen uns über kreative Köpfe. Melde dich via Instagram oder schreib uns direkt!</p>
+                    </div>
+                    <div class="events-illu" aria-hidden="true">
+                        <img src="assets/Hands and coffee.png" alt="">
+                        <img src="assets/Book.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--BRUNCH-->
-        <div class="container section-warm">
-            <section id="brunch" class="brunch-container" aria-label="Weekend Brunch">
-                <h2 class="section-title">Weekend Brunch</h2>
-                <div class="row">
-                    <div class="col centered">
-                        <img class="verdrehen small" src="assets/croissant.png" alt="Croissant">
-                        <img class="verdrehen small" src="assets/croissant.png" alt="Croissant">
-                        <img class="verdrehen small" src="assets/croissant.png" alt="Croissant">
-                    </div>
-                    <div class="col block-text">
-                        <p>Jeden Samstag und Sonntag lädt das Café Fokus zum entspannten Wochenendbrunch ein.
-                        Frisch gebackene Croissants, hausgemachter Karottenkuchen, saftige Fruchtpies und zarte Schokoladenscones –
-                        alles liebevoll zubereitet und perfekt begleitet von unseren handverlesenen Specialty Coffees aus Nomad-Bohnen.</p>
-                        <p>Natürlich sind vegane Optionen immer mit dabei. Kommt vorbei, nehmt euch Zeit – und bringt gerne euren Hund mit!</p>
-                    </div>
+        <!-- UPCOMING -->
+        <section id="upcoming" class="section-upcoming" aria-label="Kommende Veranstaltungen">
+            <div class="upcoming-inner">
+                <div class="upcoming-deco" aria-hidden="true">
+                    <img src="assets/star.png" alt="" class="star">
+                    <img src="assets/star.png" alt="" class="star">
                 </div>
-            </section>
-        </div>
-
-        <!--PARALLAX-->
-        <div class="parallax-section" aria-hidden="true">
-            <div class="parallax-bg-two"></div>
-        </div>
-
-        <!--EVENTS-->
-        <div class="container">
-            <section id="events" class="events-container" aria-label="Events und Veranstaltungen">
-                <h2 class="section-title">Save the Date</h2>
-                <div class="row">
-                    <div class="col-sm-6 block-text">
-                        <p>Das Café Fokus ist mehr als nur ein Kaffeehaus – es ist ein Ort der Begegnung. Wir öffnen unsere Türen regelmäßig für besondere Abende: Lesungen, kleine Konzerte, Ausstellungen und Community-Events machen unser zweistöckiges Lokal zum kulturellen Treffpunkt im Herzen Leopoldstadts.</p>
-                        <p>Halte unsere Instagram-Seite im Blick, um keine Veranstaltung zu verpassen: <a href="https://www.instagram.com/le.cafe.fokus/" target="_blank" rel="noopener">@le.cafe.fokus</a></p>
-                    </div>
-                    <div class="col-sm-6 centered">
-                        <img class="small" src="assets/Book.png" alt="Zwei Hände halten ein Buch">
-                    </div>
+                <div class="upcoming-content">
+                    <h2 class="section-title">Upcoming Events</h2>
+                    <hr>
+                    <!-- Nächste Veranstaltung hier eintragen -->
                 </div>
-                <div class="row">
-                    <div class="col-4 centered">
-                        <img class="small" src="assets/Perso 2.png" alt="Illustration einer Tasse">
-                    </div>
-                    <div class="col block-text">
-                        <p>Ob spontaner Kaffeenachmittag oder geplanter Event-Abend – bei uns ist immer was los. Schreib uns, wenn du selbst eine Veranstaltung ausrichten möchtest.</p>
-                        <p>Wir freuen uns über kreative Köpfe und neue Ideen, die unseren Fokus-Geist teilen. Unser gemütliches zweistöckiges Lokal bietet den perfekten Rahmen für kleine, intime Veranstaltungen.</p>
-                        <h3>Gemeinschaft & Kultur</h3>
-                        <p>Vom Buch-Club über Vinyl-Abende bis hin zu Kunstinstallationen – das Café Fokus ist offen für alles, was verbindet. Melde dich einfach via Instagram oder E-Mail bei uns!</p>
-                    </div>
+                <div class="upcoming-perso" aria-hidden="true">
+                    <img src="assets/Perso 2.png" alt="">
                 </div>
-            </section>
-        </div>
-
-        <!--PARALLAX-->
-        <div class="parallax-section" aria-hidden="true">
-            <div class="parallax-bg-three"></div>
-        </div>
-
-        <!--UPCOMING EVENTS-->
-        <div class="container">
-            <section id="upcoming" class="upcoming-events-container" aria-label="Kommende Veranstaltungen">
-                <h2 class="section-title">Upcoming Events</h2>
-                <div class="row small-star" aria-hidden="true">
-                    <img class="col vergroessern" src="assets/star.png" alt="">
-                    <img class="col vergroessern" src="assets/star.png" alt="">
-                    <img class="col vergroessern" src="assets/star.png" alt="">
-                </div>
-                <hr>
-                <!-- Nächste Veranstaltung hier eintragen -->
-            </section>
-        </div>
-
-        <!--CAROUSEL-->
-        <div class="carousel-container">
-            <div id="demo" class="carousel slide" data-bs-ride="carousel" aria-label="Bildergalerie">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Bild 1"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Bild 2"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Bild 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <figure class="carousel-item active m-0">
-                        <img src="images/medium-shot-woman-holding-coffee-mug.jpg" alt="Frau hält eine Kaffeetasse" class="d-block w-100">
-                    </figure>
-                    <figure class="carousel-item m-0">
-                        <img src="images/neagtive-space-woman-stirring-coffee-Custom-1.jpg" alt="Frau rührt in einem Kaffee" class="d-block w-100">
-                    </figure>
-                    <figure class="carousel-item m-0">
-                        <img src="images/woman-enjoying-coffee-cup.jpg" alt="Frau genießt eine Tasse Kaffee" class="d-block w-100">
-                    </figure>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev" aria-label="Vorheriges Bild">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next" aria-label="Nächstes Bild">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </button>
             </div>
+        </section>
+
+        <!-- PHOTO STRIP -->
+        <div class="photo-strip" aria-label="Bildergalerie">
+            <img src="images/woman-enjoying-coffee-cup.jpg" alt="Frau genießt Kaffee">
+            <img src="images/milk_cofe.jpg" alt="Milchkaffee">
+            <img src="images/negative-space-man-coffee-sun.jpg" alt="Mann mit Kaffee in der Sonne">
         </div>
 
-        <!--ABOUT US-->
-        <div class="container section-warm">
-            <article id="about" class="about-container" aria-label="Über uns">
+        <!-- ABOUT: SPLIT REVERSE -->
+        <section id="about" class="split split--reverse" aria-label="Über uns">
+            <div class="split-photo" style="background-image: url('images/cofe_cake.jpg');"></div>
+            <div class="split-content">
+                <span class="section-num" aria-hidden="true">03</span>
                 <h2 class="section-title">About us</h2>
                 <h3>Wer wir sind ...</h3>
-                <p>Wir sind ein kleines, zweistöckiges Café mitten im 2. Bezirk – in Leopoldstadt, einem der lebendigsten Grätzl Wiens. Gegründet mit einer klaren Mission: erstklassigen Specialty Coffee in entspannter Atmosphäre zu servieren.</p>
-                <p>Als Third-Wave Coffee Bar liegt uns die Bohne am Herzen. Wir arbeiten mit Nomad-Bohnen und bringen euch alles – vom klassischen Espresso bis hin zu unserem funky Filterkaffee. Unsere Baristas kennen ihr Handwerk, lächeln dabei immer und freuen sich auf euch – ob ihr das erste oder das hundertste Mal vorbeikommt.</p>
+                <p>Ein kleines, zweistöckiges Café in Leopoldstadt – dem lebendigsten Grätzl Wiens. Specialty Coffee, Nomad-Bohnen, Third-Wave. Unsere Baristas kennen ihr Handwerk und freuen sich auf euch – ob ihr das erste oder das hundertste Mal vorbeikommt.</p>
                 <p>Hunde willkommen. Kinder willkommen. Gute Laune wird nicht verlangt – aber meistens mitgebracht.</p>
-            </article>
-        </div>
+                <div class="about-illu" aria-hidden="true">
+                    <img src="assets/door.png" alt="">
+                    <img src="assets/Perso 3.png" alt="">
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <!--BACK TO TOP-->
+    <!-- BACK TO TOP -->
     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-up-circle" id="scrollToTopBtn" viewBox="0 0 16 16" role="button" aria-label="Nach oben scrollen" tabindex="0">
         <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
     </svg>
 
-    <!--FOOTER-->
+    <!-- FOOTER -->
     <footer>
-        <div class="row text-centered">
-            <div class="col">
+        <div class="footer-inner">
+            <div class="footer-col">
                 <h2>Location</h2>
                 <address>
                     Café Fokus<br>
                     Kleine Pfarrgasse 28<br>
-                    1020 Vienna<br>
-                    AUSTRIA
+                    1020 Vienna, AUSTRIA
                 </address>
             </div>
-            <div class="col">
-                <h2>Legal</h2>
+            <div class="footer-logo" aria-hidden="true">
+                <img src="assets/Fokus logo.png" alt="">
+            </div>
+            <div class="footer-col">
+                <h2>Contact</h2>
+                <address>
+                    +43 699 12345678<br>
+                    <a href="mailto:lecafefokus@gmail.com">lecafefokus@gmail.com</a><br>
+                    <a href="https://www.instagram.com/le.cafe.fokus/" target="_blank" rel="noopener">Instagram</a>
+                </address>
+                <h2 class="mt">Legal</h2>
                 <nav aria-label="Rechtliche Links">
                     <a href="impressum.html">Impressum</a>
                 </nav>
             </div>
-            <div class="col">
-                <h2>Contact</h2>
-                <address>
-                    <i class="fa fa-phone" aria-hidden="true"></i> +43 699 12345678<br>
-                    <a href="mailto:lecafefokus@gmail.com">lecafefokus@gmail.com</a><br>
-                    <a href="https://www.instagram.com/le.cafe.fokus/" target="_blank" rel="noopener" aria-label="Café Fokus auf Instagram">Instagram</a>
-                </address>
-            </div>
         </div>
     </footer>
+
 </body>
 </html>
