@@ -11,6 +11,7 @@
 
 .nav-link {
     color: black;
+    letter-spacing: 0.05em;
 }
 
 .nav-link:hover {
@@ -19,7 +20,7 @@
 }
 
 .parallax-section {
-    height: 45vh;
+    height: 40vh;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -83,18 +84,35 @@
 
 h1 {
     font-style: oblique;
-    text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 700;
+}
+
+.section-title {
+    font-style: oblique;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 h2 {
     text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-style: oblique;
+    text-align: center;
     font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .banner-container {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .nav {
@@ -105,37 +123,48 @@ h2 {
 .container {
     max-width: 100%;
     display: block;
-    padding: 0px;
+    padding: 0 20px;
 }
 
 .block-text {
-    padding: 0px 40px;
+    padding: 0 24px;
+    font-size: 0.95rem;
+    line-height: 1.7;
 }
 
 .small-star {
     margin-left: auto;
     margin-right: auto;
-    max-width: 25%;
+    max-width: 18%;
+}
+
+.section-warm {
+    background-color: #faf7f2;
 }
 
 .events-container {
-    padding: 5px;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 30px 0;
 }
 
 .upcoming-events-container {
-    padding-top: 20px;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 20px 0 30px;
 }
 
 .brunch-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: transparent;
+    max-width: 860px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .carousel-container {
-    max-width: 100%;
-    height: auto;
-    padding: 30px 60px;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 20px 0 30px;
 }
 
 #logo {
@@ -143,7 +172,7 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     padding-top: 8px;
-    max-width: 15%;
+    max-width: 12%;
     transition: all 0.5s ease;
 }
 
@@ -166,24 +195,38 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 8px;
 }
 
 img.small {
-    width: 50%;
+    width: 35%;
 }
 
 .vergroessern {
-    max-width: 60%;
+    max-width: 35%;
     display: block;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
     transition: transform 0.3s ease-in-out;
 }
 
+.impressum-container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 30px 20px 40px;
+}
+
+.impressum-container ul {
+    padding-left: 1.5rem;
+    line-height: 1.9;
+}
+
 .about-container {
-    padding: 20px 80px;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 30px 20px 40px;
 }
 
 .verdrehen {
@@ -202,14 +245,14 @@ footer {
     clear: right;
     background-color: rgb(144, 199, 181);
     border-top: 2px solid black;
-    padding-top: 20px;
-    padding-left: 20px;
+    padding: 20px;
+    font-size: 0.9rem;
 }
 
 .carousel-inner > .carousel-item > img {
     object-fit: cover;
     max-width: 100%;
-    height: 380px !important;
+    height: 280px !important;
 }
 
 .carousel-control-next,
@@ -219,27 +262,39 @@ footer {
 
 @media (max-width: 768px) {
     .about-container {
-        padding: 10px 16px;
+        padding: 20px 12px;
     }
 
     .block-text {
-        padding: 0px 16px;
+        padding: 0 12px;
     }
 
     .carousel-container {
-        padding: 16px;
+        padding: 12px 0;
     }
 
     .brunch-container {
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
 
     .carousel-inner > .carousel-item > img {
-        height: 200px !important;
+        height: 180px !important;
     }
 
     #logo {
-        max-width: 30%;
+        max-width: 28%;
+    }
+
+    .vergroessern {
+        max-width: 55%;
+    }
+
+    img.small {
+        width: 50%;
+    }
+
+    .small-star {
+        max-width: 40%;
     }
 }
