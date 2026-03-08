@@ -414,17 +414,15 @@ footer {
 
 /* === SCROLL TO TOP === */
 #scrollToTopBtn {
-    position: sticky;
+    position: fixed;
     bottom: 20px;
     right: 20px;
-    float: right;
     display: none;
     z-index: 1001;
     cursor: pointer;
     background: var(--yellow);
     border-radius: 50%;
     border: 2px solid var(--dark);
-    margin-bottom: 30px;
     color: var(--dark);
 }
 

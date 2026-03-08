@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var logo = document.getElementById("logo");
+    // E-Mail-Maskierung – schützt vor Spam-Bots
+    document.querySelectorAll(".js-email").forEach(function (el) {
+        var email = el.dataset.u + "\u0040" + el.dataset.d;
+        el.href = "mailto:" + email;
+        el.textContent = email;
+    });
+
     var scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
     window.addEventListener("scroll", function () {
         var scrollPos = window.scrollY;
-
-        if (scrollPos > 100) {
-            logo.style.width = "0px";
-        } else {
-            logo.style.width = "150px";
-        }
 
         if (scrollPos > 20) {
             scrollToTopBtn.style.display = "block";
