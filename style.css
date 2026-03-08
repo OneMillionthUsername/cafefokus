@@ -54,7 +54,7 @@ address { font-style: normal; }
 
 /* === HERO === */
 .hero {
-    height: 100vh;
+    height: 101vh;
     min-height: 560px;
     background: url('images/cofe_machine.jpg') center / cover no-repeat;
     background-image: image-set(
