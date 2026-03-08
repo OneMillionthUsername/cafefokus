@@ -1,1 +1,9 @@
 node_modules/
+
+# Bilder – lokal behalten, nicht versioniert
+images/
+assets/*.png
+assets/*.webp
+assets/*.jpg
+assets/*.jpeg
+assets/*.gif
