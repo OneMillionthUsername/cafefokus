@@ -59,6 +59,10 @@ address { font-style: normal; }
     height: 100vh;
     min-height: 560px;
     background: url('images/cofe_machine.jpg') center / cover no-repeat;
+    background-image: image-set(
+        url('images/cofe_machine.webp') type('image/webp'),
+        url('images/cofe_machine.jpg') type('image/jpeg')
+    );
     position: relative;
     display: flex;
     flex-direction: column;

@@ -1,0 +1,25 @@
+{
+  "name": "cafefokus",
+  "version": "1.0.0",
+  "description": "Cafe Fokus website image optimization tools",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "images:optimize": "node scripts/optimize-images.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OneMillionthUsername/cafeFokus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/OneMillionthUsername/cafeFokus/issues"
+  },
+  "homepage": "https://github.com/OneMillionthUsername/cafeFokus#readme",
+  "devDependencies": {
+    "sharp": "^0.34.5"
+  }
+}
